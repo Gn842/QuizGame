@@ -23,7 +23,7 @@ wrongAmount = 0
 # Ask every question in the hashmap
 # check if the question is right
 for q in hashmap:
-    myAnswer = input(q)
+    myAnswer = input(q + "\n")
     if hashmap[q] == myAnswer:
         print('correct')
     else:
@@ -33,7 +33,7 @@ for q in hashmap:
 
 # (2-1) /2
 score = (len(hashmap) - wrongAmount) / len(hashmap) * 100
-print(math.ceil(score))
+print( math.floor(score))
 
 
  
